@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>calci</title>
+        <style>
+            button{
+width:100px;
+height:100px;
+border-radius:10px;
+font-size:50px;
+background-color:pink;
+            }
+            input{
+                width:400px;
+                height:160px;
+                font-size:50px;
+                border-color:cyan;
+                margin-top:0px;
+            }
+            button:hover{
+                background-color:lightgreen;
+            }
+div{
+    transform:
+    perspective(1500px)
+    rortateX(15deg)
+
+}
+a{
+                text-decoration:none;
+                font-size:26px;
+            }
+           
+        </style>
+    </head>
+    <body>
+        <input type="button" onclick="gFunction()"  ondblclick='xFunction()' value="theme" id="hg"  style="font-size:26px;">
+        <button id="bb"><a href="about.html" >about</a></button>
+        <div class="cont" id="sd">
+            <div class="calci">
+                <input type="text" id="tf" placeholder="enter value">
+            </div>
+            <div ClassName="btns">
+<button onclick="AT_add(0)" id="a" class="styled-button">0</button>
+<button onclick="AT_add(1)" id="b"class="styled-button">1</button>
+<button onclick="AT_add(2)" id="c"class="styled-button">2</button>
+<button onclick="AT_add(3)" id="d"class="styled-button">3</button><br>
+<button onclick="AT_add(4)" id="e"class="styled-button">4</button>
+<button onclick="AT_add(5)" id="f"class="styled-button">5</button>
+<button onclick="AT_add(6)" id="g"class="styled-button">6</button>
+<button onclick="AT_add(7)" id="h"class="styled-button">7</button><br>
+<button onclick="AT_add(8)" id="j"class="styled-button">8</button>
+<button onclick="AT_add(9)" id="k"class="styled-button">9</button>
+<button onclick="AT_add('+')" id="m"class="styled-button">+</button>
+            <button onclick="AT_add('-')" id="n"class="styled-button">-</button><br>
+            <button onclick="AT_add('*')" id="p"class="styled-button">x</button>
+            <button onclick="AT_add('/')" id="q"class="styled-button">/</button>
+            <button onclick="exe()" id="r">=</button>
+            <button onclick="AT_add('.')" id="s"class="styled-button">.</button><br>
+<button onclick="cancel()" id="t"class="styled-button">del</button>
+<button onclick="clr()" id="dg">c</button>
+<button onclick="sqrt()" id="v"class="styled-button">sr</button>
+<button onclick="cbrt()" id="w"class="styled-button">cr</button>
+<button onclick="appendToDisplay('^2')">x²</button>
+            </div>
+            
+
+            
+        </div>
+        <script>var
+val=document.getElementById('tf')
+
+
+function AT_add(v){
+    val.value+=v;
+}
+
+function clr(){
+    val.value="";
+}
+
+function cancel(){
+    var input=document.getElementById('tf');
+    input.value=input.value.substring(0,input.value.length-1)
+}
+
+function exe(){
+    val.value=eval(val.value);
+    const display = document.getElementById('tf'); 
+    let result = eval(display.value.replace('^2', '**2')); display.value = result;
+}
+function appendToDisplay(value) { 
+    const display = document.getElementById('tf'); display.value += value; 
+}
+
+function sqrt(){
+    var val=Math.sqrt(document.getElementById('tf').value);
+    document.getElementById('tf').value=val;
+}`1aqqqqqqqqqqqqqqqqqq  
+
+function cbrt(){
+    var val=Math.cbrt(document.getElementById('tf').value);
+    document.getElementById('tf').value=val
+}
+        </script>
+        <script>
+            document.getElementById('dg').style.backgroundColor="dodgerblue"
+            document.getElementById('dg').style.color='white'
+           
+        </script>
+
+
+<script>
+     document.getElementById('hg').style.width='80px' 
+     document.getElementById('hg').style.height='70px'
+     document.getElementById('hg').style.fontSize='26px'
+     document.getElementById('hg').style.borderRadius='50px'
+     document.getElementById('hg').style. marginTop="0px"
+     document.getElementById('hg').style.float="right"
+      document.getElementById('hg').style.textAlign='center'
+</script>
+        <script>
+            document.getElementById('sd').style.marginLeft='350px'
+        </script>
+<script>
+     document.getElementById('bb').style.float="right"
+     document.getElementById('bb').style.width='80px' 
+     document.getElementById('bb').style.height='70px'
+     document.getElementById('bb').style.fontSize='20px'
+     document.getElementById('bb').style.borderRadius='50px'
+</script>
+        <script>
+            function gFunction(){
+                document.body.style.backgroundColor='coral'
+                document.getElementById('a').style.backgroundColor='yellow'
+                document.getElementById('b').style.backgroundColor='yellow'
+                document.getElementById('c').style.backgroundColor='yellow'
+                document.getElementById('d').style.backgroundColor='yellow'
+                document.getElementById('e').style.backgroundColor='yellow'
+                document.getElementById('f').style.backgroundColor='yellow'
+                document.getElementById('g').style.backgroundColor='yellow'
+                document.getElementById('h').style.backgroundColor='yellow'
+                document.getElementById('j').style.backgroundColor='yellow'
+                document.getElementById('k').style.backgroundColor='yellow'
+                document.getElementById('m').style.backgroundColor='yellow'
+                document.getElementById('n').style.backgroundColor='yellow'
+                document.getElementById('p').style.backgroundColor='yellow'
+                document.getElementById('q').style.backgroundColor='yellow'
+                document.getElementById('r').style.backgroundColor='yellow'
+                document.getElementById('s').style.backgroundColor='yellow'
+                document.getElementById('t').style.backgroundColor='yellow'
+                document.getElementById('v').style.backgroundColor='yellow'
+                document.getElementById('w').style.backgroundColor='yellow'
+            }
+        </script>
+    
+       
+        });
+    </script>
+    </body>
+
+    <address>created by opj</address>
+    
+</html>
