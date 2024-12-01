@@ -86,17 +86,12 @@ function cancel(){
 
 function exe(){
     val.value=eval(val.value);
-    const display = document.getElementById('tf'); 
-    let result = eval(display.value.replace('^2', '**2')); display.value = result;
-}
-function appendToDisplay(value) { 
-    const display = document.getElementById('tf'); display.value += value; 
 }
 
 function sqrt(){
     var val=Math.sqrt(document.getElementById('tf').value);
     document.getElementById('tf').value=val;
-}`1aqqqqqqqqqqqqqqqqqq  
+} 
 
 function cbrt(){
     var val=Math.cbrt(document.getElementById('tf').value);
@@ -154,8 +149,7 @@ function cbrt(){
             }
         </script>
     
-       
-        });
+    
     </script>
     </body>
 
